@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <array>
+        <dict>
+            <key>pais</key>
+            <string>Perú</string>
+            <key>capital</key>
+            <string>Lima</string>
+            <key>bandera</key>
+            <string>http://www.mapsofworld.com/images/world-countries-flags/peru-flag.gif</string>
+        </dict>
+        <dict>
+            <key>pais</key>
+            <string>Venezuela</string>
+            <key>capital</key>
+            <string>Caracas</string>
+            <key>bandera</key>
+            <string></string>
+        </dict>
+        <dict>
+            <key>pais</key>
+            <string>Argentina</string>
+            <key>capital</key>
+            <string>Buenos Aires</string>
+            <key>bandera</key>
+            <string></string>
+        </dict>
+        <dict>
+            <key>pais</key>
+            <string>Colombia</string>
+            <key>capital</key>
+            <string>Bogotá</string>
+            <key>bandera</key>
+            <string></string>
+        </dict>
+        <dict>
+            <key>pais</key>
+            <string>Bolivia</string>
+            <key>capital</key>
+            <string>La Paz</string>
+            <key>bandera</key>
+            <string></string>
+        </dict>
+        <dict>
+            <key>pais</key>
+            <string>Brasil</string>
+            <key>capital</key>
+            <string>Brasilia</string>
+            <key>bandera</key>
+            <string></string>
+        </dict>
+        <dict>
+            <key>pais</key>
+            <string>Uruguay</string>
+            <key>capital</key>
+            <string>Asunción</string>
+            <key>bandera</key>
+            <string></string>
+        </dict>
+        <dict>
+            <key>pais</key>
+            <string>Ecuador</string>
+            <key>capital</key>
+            <string>Quito</string>
+            <key>bandera</key>
+            <string></string>
+        </dict>
+        <dict>
+            <key>pais</key>
+            <string>Chile</string>
+            <key>capital</key>
+            <string>Santiago de Chile</string>
+            <key>bandera</key>
+            <string></string>
+        </dict>
+        
+    </array>
+</plist>

@@ -11,6 +11,10 @@
 @interface CapitalDetailViewController : UIViewController
 
 @property (strong, nonatomic) id detailItem;
-
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+
+@property (strong, nonatomic) NSString *pais;
+@property (strong, nonatomic) NSString *capital;
+
+
 @end

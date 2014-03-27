@@ -22,6 +22,10 @@
 		3A92214A18E4728000CF1BCD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A92212918E4728000CF1BCD /* UIKit.framework */; };
 		3A92215218E4728000CF1BCD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A92215018E4728000CF1BCD /* InfoPlist.strings */; };
 		3A92215418E4728000CF1BCD /* CapitalesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A92215318E4728000CF1BCD /* CapitalesTests.m */; };
+		3A92215E18E47F8A00CF1BCD /* capitales.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A92215D18E47F8A00CF1BCD /* capitales.plist */; };
+		3A92216118E481AA00CF1BCD /* CapitalTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A92216018E481AA00CF1BCD /* CapitalTable.m */; };
+		3A92216318E4986500CF1BCD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A92216218E4986500CF1BCD /* CoreLocation.framework */; };
+		3A92216518E4986C00CF1BCD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A92216418E4986C00CF1BCD /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,11 @@
 		3A92214F18E4728000CF1BCD /* CapitalesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CapitalesTests-Info.plist"; sourceTree = "<group>"; };
 		3A92215118E4728000CF1BCD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3A92215318E4728000CF1BCD /* CapitalesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CapitalesTests.m; sourceTree = "<group>"; };
+		3A92215D18E47F8A00CF1BCD /* capitales.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = capitales.plist; sourceTree = "<group>"; };
+		3A92215F18E481AA00CF1BCD /* CapitalTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CapitalTable.h; sourceTree = "<group>"; };
+		3A92216018E481AA00CF1BCD /* CapitalTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CapitalTable.m; sourceTree = "<group>"; };
+		3A92216218E4986500CF1BCD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3A92216418E4986C00CF1BCD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A92216518E4986C00CF1BCD /* MapKit.framework in Frameworks */,
+				3A92216318E4986500CF1BCD /* CoreLocation.framework in Frameworks */,
 				3A92212818E4728000CF1BCD /* CoreGraphics.framework in Frameworks */,
 				3A92212A18E4728000CF1BCD /* UIKit.framework in Frameworks */,
 				3A92212618E4728000CF1BCD /* Foundation.framework in Frameworks */,
@@ -104,6 +115,8 @@
 		3A92212418E4728000CF1BCD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3A92216418E4986C00CF1BCD /* MapKit.framework */,
+				3A92216218E4986500CF1BCD /* CoreLocation.framework */,
 				3A92212518E4728000CF1BCD /* Foundation.framework */,
 				3A92212718E4728000CF1BCD /* CoreGraphics.framework */,
 				3A92212918E4728000CF1BCD /* UIKit.framework */,
@@ -124,6 +137,9 @@
 				3A92213E18E4728000CF1BCD /* CapitalDetailViewController.m */,
 				3A92214018E4728000CF1BCD /* Images.xcassets */,
 				3A92212C18E4728000CF1BCD /* Supporting Files */,
+				3A92215D18E47F8A00CF1BCD /* capitales.plist */,
+				3A92215F18E481AA00CF1BCD /* CapitalTable.h */,
+				3A92216018E481AA00CF1BCD /* CapitalTable.m */,
 			);
 			path = Capitales;
 			sourceTree = "<group>";
@@ -237,6 +253,7 @@
 				3A92214118E4728000CF1BCD /* Images.xcassets in Resources */,
 				3A92213018E4728000CF1BCD /* InfoPlist.strings in Resources */,
 				3A92213918E4728000CF1BCD /* Main.storyboard in Resources */,
+				3A92215E18E47F8A00CF1BCD /* capitales.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +275,7 @@
 				3A92213F18E4728000CF1BCD /* CapitalDetailViewController.m in Sources */,
 				3A92213C18E4728000CF1BCD /* CapitalMasterViewController.m in Sources */,
 				3A92213218E4728000CF1BCD /* main.m in Sources */,
+				3A92216118E481AA00CF1BCD /* CapitalTable.m in Sources */,
 				3A92213618E4728000CF1BCD /* CapitalAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,6 +485,7 @@
 				3A92215918E4728000CF1BCD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A92215A18E4728000CF1BCD /* Build configuration list for PBXNativeTarget "CapitalesTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +494,7 @@
 				3A92215C18E4728000CF1BCD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
