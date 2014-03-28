@@ -1,4 +1,2 @@
-capitales
-=========
 
-Capitales app
+capitales app
