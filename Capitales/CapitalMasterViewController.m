@@ -53,11 +53,7 @@
          CapitalTable *capital = [[CapitalTable alloc] initWithPais:obj[@"pais"] capital:obj[@"capital"] andBandera:[NSURL URLWithString:obj[@"bandera"]]];
          [self.capitales addObject:capital];
      }];
-    
-    
-    //self.navigationItem.title= self.navTitle;
-
-    
+        
 }
 
 - (void)didReceiveMemoryWarning
@@ -100,11 +96,11 @@
 
     }
 }
-
+/*
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [self performSegueWithIdentifier:@"showDetail" sender:self];
 }
-
+*/
 
 @end

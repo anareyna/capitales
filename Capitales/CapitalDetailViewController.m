@@ -64,14 +64,6 @@
 }
 
 
-/*
-- (void)configureView
-{
-    if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
-    }
-}
-*/
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -91,9 +83,6 @@
         }
     });
 
-    
-    /*[self configureView];*/
-    
     
     [self.geocoder geocodeAddressString:capitals.capital completionHandler:^(NSArray *placemarks, NSError *error)
      {
