@@ -13,7 +13,8 @@
 
 @property (strong, nonatomic) NSString *pais;
 @property (strong, nonatomic) NSString *capital;
-@property (strong, nonatomic) UIImage *bandera;
+@property (strong, nonatomic) NSURL *bandera;
 
-- (instancetype)initWithPais:(NSString *)pais capital:(NSString *)capital andBandera:(UIImage *)bandera;
+- (instancetype)initWithPais:(NSString *)pais capital:(NSString *)capital andBandera:(NSURL *)bandera;
+- (UIImage *)imageFromServer;
 @end

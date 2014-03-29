@@ -10,7 +10,7 @@
 
 @implementation CapitalTable
 
-- (instancetype)initWithPais:(NSString *)pais capital:(NSString *)capital andBandera:(UIImage *)bandera {
+- (instancetype)initWithPais:(NSString *)pais capital:(NSString *)capital andBandera:(NSURL *)bandera {
     self = [super init];
     
     if (self) {
@@ -19,6 +19,22 @@
         self.bandera = bandera;
     }
     return self;
+}
+
+
+-(UIImage *)imageFromServer
+{
+    NSLog(@"Download started");
+    
+    NSData *data = [[NSData alloc] initWithContentsOfURL:self.bandera];
+    
+    NSLog(@"Data: %@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
+    
+    UIImage *image = [[UIImage alloc] initWithData:data];
+    
+    NSLog(@"Image: %@", image);
+    
+    return image;
 }
 
 @end

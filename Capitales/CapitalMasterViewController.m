@@ -50,9 +50,13 @@
     
     [self.plist enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop)
      {
-         CapitalTable *capital = [[CapitalTable alloc] initWithPais:obj[@"pais"] capital:obj[@"capital"] andBandera:obj[@"bandera"]];
+         CapitalTable *capital = [[CapitalTable alloc] initWithPais:obj[@"pais"] capital:obj[@"capital"] andBandera:[NSURL URLWithString:obj[@"bandera"]]];
          [self.capitales addObject:capital];
      }];
+    
+    
+    //self.navigationItem.title= self.navTitle;
+
     
 }
 
@@ -91,8 +95,16 @@
         CapitalDetailViewController *vc = segue.destinationViewController;
         vc.capital = capital.capital;
         vc.pais = capital.pais;
+        vc.bandera = capital.bandera;
+        vc.pCapital = capital;
 
     }
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
 
 @end

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class CapitalTable;
 @interface CapitalDetailViewController : UIViewController
 
 @property (strong, nonatomic) id detailItem;
@@ -15,6 +15,9 @@
 
 @property (strong, nonatomic) NSString *pais;
 @property (strong, nonatomic) NSString *capital;
+@property (strong, nonatomic) NSURL *bandera;
+
+@property (strong,nonatomic) CapitalTable *pCapital;
 
 
 @end

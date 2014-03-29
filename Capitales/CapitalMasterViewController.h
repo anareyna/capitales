@@ -10,4 +10,6 @@
 
 @interface CapitalMasterViewController : UITableViewController
 
+
+
 @end
